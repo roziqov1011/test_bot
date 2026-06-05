@@ -160,5 +160,18 @@ bot.catch((err) => {
     console.error('Bot error:', err);
 });
 
+// Render uchun soxta (dummy) HTTP server.
+// Render bepul rejada port eshitib turishni talab qiladi.
+const http = require('http');
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Bot is running...\n');
+});
+
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Server ${PORT}-portda ishlamoqda.`);
+});
+
 bot.start();
 console.log('Bot muvaffaqiyatli ishga tushdi...');
