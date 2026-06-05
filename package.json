@@ -1,0 +1,23 @@
+{
+  "name": "test_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@grammyjs/ratelimiter": "^1.2.1",
+    "@grammyjs/storage-prisma": "^2.5.1",
+    "@prisma/client": "^5.22.0",
+    "dotenv": "^17.4.2",
+    "exceljs": "^4.4.0",
+    "grammy": "^1.42.0",
+    "luxon": "^3.7.2",
+    "pdfkit": "^0.18.0",
+    "prisma": "^5.22.0"
+  }
+}
